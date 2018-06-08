@@ -7,7 +7,7 @@ manipulation of data inside Cassandra.
 
 import time
 import struct
-from UserDict import DictMixin
+from collections import MutableMapping as DictMixin
 
 from pycassa.cassandra.ttypes import Column, ColumnOrSuperColumn,\
     ColumnParent, ColumnPath, ConsistencyLevel, NotFoundException,\
